@@ -1,5 +1,6 @@
 # heroes
 blank = {
+    "name": "",
     "role": "",
     "theory": "",
     "healerType": "",
@@ -8,6 +9,7 @@ blank = {
     "poke": ""
 }
 ana = {
+    "name": "Ana",
     "role": "support",
     "theory": "flexSupport",
     "healerType": "mainHealer",
@@ -16,6 +18,7 @@ ana = {
     "poke": "yes"
 }
 ashe = {
+    "name": "Ashe",
     "role": "dps",
     "theory": "mainDps",
     "healerType": "none",
@@ -24,6 +27,7 @@ ashe = {
     "poke": "yes"
 }
 baptiste = {
+    "name": "Baptiste",
     "role": "support",
     "theory": "flexSupport",
     "healerType": "mainHealer",
@@ -32,6 +36,7 @@ baptiste = {
     "poke": "yes"
 }
 bastion = {
+    "name": "Bastion",
     "role": "dps",
     "theory": "situationalDps",
     "healerType": "none",
@@ -40,6 +45,7 @@ bastion = {
     "poke": "yes"
 }
 brigitte = {
+    "name": "Brigitte",
     "role": "support",
     "theory": "mainSupport",
     "healerType": "offHealer",
@@ -48,6 +54,7 @@ brigitte = {
     "poke": "situational"
 }
 cassidy = {
+    "name": "Cassidy",
     "role": "dps",
     "theory": "mainDps",
     "healerType": "none",
@@ -56,6 +63,7 @@ cassidy = {
     "poke": "yes"
 }
 doomfist = {
+    "name": "Doomfist",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -64,6 +72,7 @@ doomfist = {
     "poke": "no"
 }
 dva = {
+    "name": "D'va",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -72,6 +81,7 @@ dva = {
     "poke": "no"
 }
 echo = {
+    "name": "Echo",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
@@ -80,14 +90,16 @@ echo = {
     "poke": "yes"
 }
 genji = {
+    "name": "Genji",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
-    "dive": "yes",
+    "dive": "situational",
     "brawl": "situational",
     "poke": "situational"
 }
 hanzo = {
+    "name": "Hanzo",
     "role": "dps",
     "theory": "mainDps",
     "healerType": "none",
@@ -96,6 +108,7 @@ hanzo = {
     "poke": "yes"
 }
 junkerQueen = {
+    "name": "Junker Queen",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -104,6 +117,7 @@ junkerQueen = {
     "poke": "no"
 }
 junkrat = {
+    "name": "Junkrat",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
@@ -112,6 +126,7 @@ junkrat = {
     "poke": "yes"
 }
 kiriko = {
+    "name": "Kiriko",
     "role": "support",
     "theory": "flexSupport",
     "healerType": "offHealer",
@@ -120,6 +135,7 @@ kiriko = {
     "poke": "no"
 }
 lifeweaver = {
+    "name": "Lifeweaver",
     "role": "support",
     "theory": "flexSupport",
     "healerType": "offHealer",
@@ -128,6 +144,7 @@ lifeweaver = {
     "poke": "no"
 }
 lucio = {
+    "name": "Lucio",
     "role": "support",
     "theory": "mainSupport",
     "healerType": "offHealer",
@@ -136,6 +153,7 @@ lucio = {
     "poke": "no"
 }
 mei = {
+    "name": "Mei",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
@@ -144,6 +162,7 @@ mei = {
     "poke": "yes"
 }
 mercy = {
+    "name": "Mercy",
     "role": "support",
     "theory": "mainSupport",
     "healerType": "offHealer",
@@ -152,6 +171,7 @@ mercy = {
     "poke": "yes"
 }
 moira = {
+    "name": "Moira",
     "role": "support",
     "theory": "flexSupport",
     "healerType": "mainHealer",
@@ -160,6 +180,7 @@ moira = {
     "poke": "no"
 }
 orisa = {
+    "name": "Orisa",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -168,6 +189,7 @@ orisa = {
     "poke": "yes"
 }
 pharah = {
+    "name": "Pharah",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
@@ -176,6 +198,7 @@ pharah = {
     "poke": "no"
 }
 ramattra = {
+    "name": "Ramattra",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -184,6 +207,7 @@ ramattra = {
     "poke": "yes"
 }
 reaper = {
+    "name": "Reaper",
     "role": "dps",
     "theory": "situationalDps",
     "healerType": "none",
@@ -192,6 +216,7 @@ reaper = {
     "poke": "no"
 }
 reinhardt = {
+    "name": "Reinhardt",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -200,6 +225,7 @@ reinhardt = {
     "poke": "situational"
 }
 roadhog = {
+    "name": "Roadhog",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -208,6 +234,7 @@ roadhog = {
     "poke": "yes"
 }
 sigma = {
+    "name": "Sigma",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -216,6 +243,7 @@ sigma = {
     "poke": "yes"
 }
 sojourn = {
+    "name": "Sojourn",
     "role": "dps",
     "theory": "mainDps",
     "healerType": "none",
@@ -224,6 +252,7 @@ sojourn = {
     "poke": "yes"
 }
 soldier76 = {
+    "name": "Soldier 76",
     "role": "dps",
     "theory": "mainDps",
     "healerType": "none",
@@ -232,6 +261,7 @@ soldier76 = {
     "poke": "yes"
 }
 sombra = {
+    "name": "Sombra",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
@@ -240,6 +270,7 @@ sombra = {
     "poke": "no"
 }
 symmetra = {
+    "name": "Symmetra",
     "role": "dps",
     "theory": "situationalDps",
     "healerType": "none",
@@ -248,6 +279,7 @@ symmetra = {
     "poke": "yes"
 }
 torbjorn = {
+    "name": "Torbjorn",
     "role": "dps",
     "theory": "flexDPS",
     "healerType": "none",
@@ -256,6 +288,7 @@ torbjorn = {
     "poke": "yes"
 }
 tracer = {
+    "name": "Tracer",
     "role": "dps",
     "theory": "situationalDps",
     "healerType": "none",
@@ -264,6 +297,7 @@ tracer = {
     "poke": "no"
 }
 widowmaker = {
+    "name": "Widowmaker",
     "role": "dps",
     "theory": "situationalDps",
     "healerType": "none",
@@ -272,6 +306,7 @@ widowmaker = {
     "poke": "yes"
 }
 winston = {
+    "name": "Winston",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -280,6 +315,7 @@ winston = {
     "poke": "no"
 }
 wreckingBall = {
+    "name": "Wrecking Ball",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -288,6 +324,7 @@ wreckingBall = {
     "poke": "no"
 }
 zarya = {
+    "name": "Zarya",
     "role": "tank",
     "theory": "tank",
     "healerType": "none",
@@ -296,6 +333,7 @@ zarya = {
     "poke": "situational"
 }
 zenyatta = {
+    "name": "Zenyatta",
     "role": "support",
     "theory": "flexSupport",
     "healerType": "offHealer",
@@ -303,3 +341,44 @@ zenyatta = {
     "brawl": "no",
     "poke": "yes"
 }
+
+listofheroes = [
+    blank,
+    ana,
+    ashe,
+    baptiste,
+    bastion,
+    brigitte,
+    cassidy,
+    doomfist,
+    dva,
+    echo,
+    genji,
+    hanzo,
+    junkerQueen,
+    junkrat,
+    kiriko,
+    lifeweaver,
+    lucio,
+    mei,
+    mercy,
+    moira,
+    orisa,
+    pharah,
+    ramattra,
+    reaper,
+    reinhardt,
+    roadhog,
+    sigma,
+    sojourn,
+    soldier76,
+    sombra,
+    symmetra,
+    torbjorn,
+    tracer,
+    widowmaker,
+    winston,
+    wreckingBall,
+    zarya,
+    zenyatta,
+]
