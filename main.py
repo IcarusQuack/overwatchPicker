@@ -1,10 +1,10 @@
 import heroes
 
-a = heroes.reinhardt
+a = heroes.sigma
 b = heroes.mercy
-c = heroes.soldier76
+c = heroes.hanzo
 d = heroes.blank
-e = heroes.kiriko
+e = heroes.ana
 heroList = [a, b, c, d, e]
 
 
@@ -154,7 +154,16 @@ def stylePreference(roles, styles):
     brawling = False
     poking = False
     compscore = totalpicks + 1
-    if totalpicks > 2:
+    if dive > 6:
+        diving = True
+        print("This is a perfect team for diving")
+    if brawl > 6:
+        brawling = True
+        print("This is a perfect team for brawling")
+    if poke > 6:
+        poking = True
+        print("This is a perfect team for poking")
+    elif totalpicks > 2:
         if dive >= compscore:
             diving = True
             print("This is a great team for diving")
