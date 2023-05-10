@@ -4,7 +4,7 @@ a = heroes.sigma
 b = heroes.cassidy
 c = heroes.pharah
 d = heroes.ana
-e = heroes.mercy
+e = heroes.baptiste
 heroList = [a, b, c, d, e]
 
 
@@ -48,18 +48,21 @@ def calcStyle():
                 poke += .5
             else:
                 poke += 1
-
     print("dive score is", dive)
     print("brawl score is", brawl)
     print("poke score is", poke)
+    stylescores = [dive, brawl, poke]
+    return stylescores
 
 
 def roleNeeded():
     tank = 0
     mainDps = 0
-    flexDPS = 0
+    flexDps = 0
     mainSupport = 0
     flexSupport = 0
+    mainHealer = 0
+    offHealer = 0
     totalDps = 0
     totalSupport = 0
     # Adding heroes
@@ -70,7 +73,7 @@ def roleNeeded():
             mainDps += 1
             totalDps += 1
         elif x['theory'] == "flexDPS":
-            flexDPS += 1
+            flexDps += 1
             totalDps += 1
         elif x['theory'] == "situationalDps":
             totalDps += 1
@@ -80,6 +83,11 @@ def roleNeeded():
         elif x['theory'] == "flexSupport":
             totalSupport += 1
             flexSupport += 1
+        if x['role'] == "support":
+            if x['healerType'] == "mainHealer":
+                mainHealer += 1
+            else:
+                offHealer += 1
     # Printing out what role is needed
     if tank == 0:
         print("Tank needed")
@@ -102,9 +110,19 @@ def roleNeeded():
             print("Flex Support needed")
         else:
             print("Main Support or Flex Support needed")
+        if mainHealer == 1:
+            print("Off Healer needed")
+        elif offHealer == 1:
+            print("Main Healer needed")
     if totalSupport == 2:
         if mainSupport == 2:
             print("Too many Main Supports")
+        if mainHealer == 2:
+            print("Possibly too many Main Healers")
+        if offHealer ==2:
+            print("Possibily too many Off Healers")
+    roletheory = [tank, mainDps, flexDps, mainSupport, flexSupport, mainHealer, offHealer, totalDps, totalSupport]
+    return roletheory
 
 
 calcStyle()
