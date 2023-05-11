@@ -1,11 +1,13 @@
 import heroes
+import tkinter as tk
 
 a = heroes.sigma
 b = heroes.mercy
-c = heroes.hanzo
+c = heroes.bastion
 d = heroes.blank
 e = heroes.ana
 heroList = [a, b, c, d, e]
+suggestedHeroes = []
 
 
 def calcStyle():
@@ -210,109 +212,138 @@ def suggestHeroes(stylecomp, roles):
         print("Suggested Dive Heroes:")
         for x in listofheroes:
             if x['role'] == "tank" and needtank is True and x['dive'] == "yes":
-                print(x['name'])
+                suggestedHeroes.append(x)
             if x['role'] == "dps" and needdps is True:
                 if roles[9] is True and x['theory'] == "mainDps" and x['dive'] == "yes":
-                    print(x['name'])
+                    suggestedHeroes.append(x)
                 elif roles[10] is True and x['theory'] == "flexDPS" and x['dive'] == "yes":
-                    print(x['name'])
+                    suggestedHeroes.append(x)
                 elif roles[9] is True and x['theory'] == "mainDps" and x['dive'] == "situational":
-                    print(x['name'], x['dive'])
+                    suggestedHeroes.append(x)
                 elif roles[10] is True and x['theory'] == "flexDPS" and x['dive'] == "situational":
-                    print(x['name'], x['dive'])
+                    suggestedHeroes.append(x)
                 elif x['theory'] == "situationalDps" and x['dive'] == "yes":
-                    print(x['name'], x['theory'])
+                    suggestedHeroes.append(x)
             if x['role'] == "support" and needsupport is True:
                 if roles[11] is True and x['theory'] == "mainSupport":
                     if roles[13] is True and x['healerType'] == "mainHealer" and x['dive'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['dive'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[13] is True and x['healerType'] == "mainHealer" and x['dive'] == "situational":
-                        print(x['name', x['dive']])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['dive'] == "situational":
-                        print(x['name', x['dive']])
+                        suggestedHeroes.append(x)
                 elif roles[12] is True and x['theory'] == "flexSupport":
                     if roles[13] is True and x['healerType'] == "mainHealer" and x['dive'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['dive'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[13] is True and x['healerType'] == "mainHealer" and x['dive'] == "situational":
-                        print(x['name', x['dive']])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['dive'] == "situational":
-                        print(x['name', x['dive']])
+                        suggestedHeroes.append(x)
     if stylecomp[1] is True:
         print("Suggested Brawl Heroes:")
         for x in listofheroes:
             if x['role'] == "tank" and needtank is True and x['brawl'] == "yes":
-                print(x['name'])
+                suggestedHeroes.append(x)
             if x['role'] == "dps" and needdps is True:
                 if roles[9] is True and x['theory'] == "mainDps" and x['brawl'] == "yes":
-                    print(x['name'])
+                    suggestedHeroes.append(x)
                 elif roles[10] is True and x['theory'] == "flexDPS" and x['brawl'] == "yes":
-                    print(x['name'])
+                    suggestedHeroes.append(x)
                 elif roles[9] is True and x['theory'] == "mainDps" and x['brawl'] == "situational":
-                    print(x['name'], x['brawl'])
+                    suggestedHeroes.append(x)
                 elif roles[10] is True and x['theory'] == "flexDPS" and x['brawl'] == "situational":
-                    print(x['name'], x['brawl'])
+                    suggestedHeroes.append(x)
                 elif x['theory'] == "situationalDps" and x['brawl'] == "yes":
-                    print(x['name'], x['theory'])
+                    suggestedHeroes.append(x)
             if x['role'] == "support" and needsupport is True:
                 if roles[11] is True and x['theory'] == "mainSupport":
                     if roles[13] is True and x['healerType'] == "mainHealer" and x['brawl'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['brawl'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[13] is True and x['healerType'] == "mainHealer" and x['brawl'] == "situational":
-                        print(x['name', x['brawl']])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['brawl'] == "situational":
-                        print(x['name', x['brawl']])
+                        suggestedHeroes.append(x)
                 elif roles[12] is True and x['theory'] == "flexSupport":
                     if roles[13] is True and x['healerType'] == "mainHealer" and x['brawl'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['brawl'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[13] is True and x['healerType'] == "mainHealer" and x['brawl'] == "situational":
-                        print(x['name', x['brawl']])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['brawl'] == "situational":
-                        print(x['name', x['brawl']])
+                        suggestedHeroes.append(x)
     if stylecomp[2] is True:
         print("Suggested Poke Heroes")
         for x in listofheroes:
             if x['role'] == "tank" and needtank is True and x['poke'] == "yes":
-                print(x['name'])
+                suggestedHeroes.append(x)
             if x['role'] == "dps" and needdps is True:
                 if roles[9] is True and x['theory'] == "mainDps" and x['poke'] == "yes":
-                    print(x['name'])
+                    suggestedHeroes.append(x)
                 elif roles[10] is True and x['theory'] == "flexDPS" and x['poke'] == "yes":
-                    print(x['name'])
+                    suggestedHeroes.append(x)
                 elif roles[9] is True and x['theory'] == "mainDps" and x['poke'] == "situational":
-                    print(x['name'], x['poke'])
+                    suggestedHeroes.append(x)
                 elif roles[10] is True and x['theory'] == "flexDPS" and x['poke'] == "situational":
-                    print(x['name'], x['poke'])
+                    suggestedHeroes.append(x)
                 elif x['theory'] == "situationalDps" and x['poke'] == "yes":
-                    print(x['name'], x['theory'])
+                    suggestedHeroes.append(x)
             if x['role'] == "support" and needsupport is True:
                 if roles[11] is True and x['theory'] == "mainSupport":
                     if roles[13] is True and x['healerType'] == "mainHealer" and x['poke'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['poke'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[13] is True and x['healerType'] == "mainHealer" and x['poke'] == "situational":
-                        print(x['name', x['poke']])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['poke'] == "situational":
-                        print(x['name', x['poke']])
+                        suggestedHeroes.append(x)
                 elif roles[12] is True and x['theory'] == "flexSupport":
                     if roles[13] is True and x['healerType'] == "mainHealer" and x['poke'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['poke'] == "yes":
-                        print(x['name'])
+                        suggestedHeroes.append(x)
                     elif roles[13] is True and x['healerType'] == "mainHealer" and x['poke'] == "situational":
-                        print(x['name', x['poke']])
+                        suggestedHeroes.append(x)
                     elif roles[14] is True and x['healerType'] == "offHealer" and x['poke'] == "situational":
-                        print(x['name', x['poke']])
+                        suggestedHeroes.append(x)
+
+
+def fixSuggestedHeroes():
+    for y in range(len(heroList)):
+        for x in range(len(suggestedHeroes)):
+            if suggestedHeroes[x] == heroList[y]:
+                suggestedHeroes.remove(suggestedHeroes[x])
+                fixSuggestedHeroes()
+                break
+
+
+def remove_duplicate_dicts(lst):
+    # create an empty dictionary to store unique dictionaries
+    unique_dict = {}
+
+    # loop through each dictionary in the list
+    for x in lst:
+        # convert the dictionary to a tuple of its items
+        dict_items = tuple(x.items())
+
+        # if the tuple is not already in the unique_dict dictionary, add it
+        if dict_items not in unique_dict:
+            unique_dict[dict_items] = x
+
+    # return the list of unique dictionaries
+    return list(unique_dict.values())
 
 
 roleTheoryList = roleNeeded()
 styleCompList = stylePreference(roleTheoryList, calcStyle())
 suggestHeroes(styleCompList, roleTheoryList)
+fixSuggestedHeroes()
+suggestedHeroes = remove_duplicate_dicts(suggestedHeroes)
+print(suggestedHeroes)
